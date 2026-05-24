@@ -18,7 +18,7 @@ jobs:
       # 签出代码
       - uses: actions/checkout@v4
         with:
-          ref: dev
+          ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # APK签名设置
@@ -133,7 +133,7 @@ jobs:
       # 签出代码
       - uses: actions/checkout@v4
         with:
-          ref: dev
+          ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
       # 设置Flutter环境
       - name: Setup Flutter
@@ -183,7 +183,7 @@ jobs:
       # 签出代码
       - uses: actions/checkout@v4
         with:
-          ref: dev
+          ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
       # 设置Flutter环境
       - name: Setup Flutter
